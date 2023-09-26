@@ -1,0 +1,525 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: #FFF2F2;
+    font-family: 'Happy Monkey', cursive;
+}
+
+/* Tabela de Redes*/
+.redes{
+    background-color: #b05851;
+    
+    width: 100%;
+    height: 35px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+.redes a svg{
+    width: 20px;
+}
+.h32{
+    margin-left: 30px;
+}
+.redes h3{
+    margin-left: 10px;
+}
+.redes a:hover{
+    color: #ffcdca;
+}
+.redes.scrolled{
+    height: 0px;
+}
+
+/*NAV BAR*/
+.logo{
+    width: 250px;
+    height: 50px;
+    
+}
+.logo.scrolled{
+    width: 150px;
+}
+.logo.open{
+    width: 150px;
+}
+.logo img{
+    width: 250px;
+    position: absolute;
+}
+.logo img.scrolled{
+    width: 150px;
+}
+.logo img.open{
+    width: 150px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 10;
+    
+    background-color: #ffffff;
+}
+header.scrolled{
+    background-color: #6d0000;
+}
+.nav-bar{
+    width: 100%;
+    height: 100%;    
+}
+.nav-list{
+    width: 100%;
+    height: 100%;
+}
+.nav-list ul{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    
+    text-decoration: none;
+}
+.nav-list ul li{
+    list-style-type: none;
+}
+.nav-list ul a{
+    font-size: 36px;
+    color: #b05851;
+
+    text-decoration: none;
+    font-family: 'Happy Monkey', cursive;
+}
+.nav-list ul a:hover{
+    color: #6d0000;
+}
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.mobile-menu ul a{
+    text-decoration: none;
+    font-family: 'Happy Monkey', cursive;
+    font-size: 25px;
+    color: #b05851;
+}
+.mobile-menu ul a:hover{
+    color: #6d0000;
+}
+
+/*BANNER*/
+.slider{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fraseslider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fraseslider h1{
+    font-size: 50px;
+    color: #6d0000;
+}
+.fraseslider a{
+    margin-top: 30px;
+    margin-bottom: 120px;
+    background-color: #F28080;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 25px;
+}
+.fraseslider a:hover{
+    background-color: #b05851;
+}
+/*Slogan*/
+.slogan{
+    width: 100%;
+    height: 365px;
+    background-image: url(../img/retangulos/banner2.png);
+    background-size: cover;
+    background-position: center;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+}
+
+.direito{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direito p{
+    margin-right: 10px;
+    margin-bottom: 90px;
+    color: #fff;
+    font-size: 50px;
+}
+.esquerdo{
+    width: 40%;
+}
+.esquerdo img{
+    width: 400px;
+}
+
+
+
+/*SOBRE*/
+.Sobre{
+    width: 100%;
+    height: 400px;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.espaco,#texto{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#foto{
+    background-image: url(../img/fundoQ.jpg);
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: #b05851 10px dashed;
+    border-radius: 10px;
+ 
+}
+#texto{
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-right: 50px;
+}
+#foto img{
+    border-radius: 150px 150px 0px 0px;
+    width: 60%;
+}
+#texto h2{
+    font-size: 55px;
+    color: #6d0000;
+}
+#texto p{
+    font-size: 30px;
+    margin-bottom: 50px;
+
+    text-align: justify;
+}
+
+/* Banner 2*/
+.banner2{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/costura.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    outline: 10px #b05851  dashed;
+
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.visao{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.vis1,.vis2,.vis3{
+    width: 280px;
+    height: 250px;
+
+    margin-top: 50px;
+    background-color: #b05851;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;;
+    padding: 30px;
+    color: #fff;
+}
+.vis1 svg,.vis2 svg,.vis3 svg{
+    width: 150px;
+}
+.vis1 h2,.vis2 h2,.vis3 h2{
+    margin-top: 20px;
+    font-size: 24px;
+}
+/*FOOOTER*/
+footer{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/retangulos/footer.png);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+#dirfooter{
+    width: 30%;
+    display: flex;
+    align-items: end;
+}
+#dirfooter img{
+    width: 290px;
+}
+#redesfo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+#redesfooter{
+    width: 100%;
+    height: 40%;
+}
+#redesfo a{
+    display: flex;
+    flex-direction: row;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+
+    margin-bottom: 60px;
+    
+}
+#redesfo svg{
+    width: 30px;
+    margin-right: 10px;
+}
+/*
+-------------RESPONSIVIDADE-------------
+*/
+@media screen and (max-width: 1044px) {
+    .esquerdo img{
+        width: 300px;
+    }
+
+    /*SOBRE*/
+    .Sobre{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .espaco,#foto{
+        width: 90%;
+    }
+    #texto{
+        padding-right: 0px;
+        margin-top: 30px;
+
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+/*MENU*/
+.item .content{
+    margin-left: -60px;
+}
+.nav-bar {
+    padding-right: 30px ;
+}
+.nav-item {
+    display: none;
+}
+.login-button {
+    display: none;
+}
+.mobile-menu-icon {
+    display: block;
+}
+.mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+
+    background-color: #ffffff;
+}
+.mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+}
+.mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+}
+.mobile-menu .login-button button {
+    width: 100%;
+}
+.open {
+    display: block;
+}
+.redes a h3{
+    font-size: 20px;
+ }
+.direito{
+    width: 100%;
+    padding-left: 30px;
+}
+.esquerdo{
+    display: none;
+}
+#dirfooter img{
+    width: 200px;
+}
+
+}
+@media screen and (max-width: 650px) {
+
+    .slider{
+        margin-top: 100px;
+        height: 400px;
+
+        background-position: 70%;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .fraseslider h1 {
+        
+        font-size: 30px;
+    }
+    .fraseslider a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .fraseslider{
+        margin-left: 20px;
+    }
+    /*Footer*/
+    footer{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    footer a{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 550px) {
+/*Menu*/
+    .logo{
+        width: 200px;
+        height: 50px;
+    }
+    .logo.open{
+        width: 100px;
+    }
+    .logo img{
+        width: 200px;
+        position: absolute;
+    }
+    .logo img.open{
+        width: 100px;
+    }
+
+/*Redes*/
+    .redes{
+        height: 40px;
+    }
+    .redes a h3{
+        display: none;
+    }
+    .redes a svg{
+        width: 30px;
+    }
+
+    /*Slogan*/
+    .slogan{
+        height: 500px;
+    }
+    .direito{
+       height: 100px;
+       margin-top: 500px;
+    }
+    .direito p{
+        width: 100%;
+        font-size: 35px;
+    }
+    .esquerdo{
+        display: block;
+    }
+
+    /*Sobre*/
+    #texto p{
+        font-size: 25px;
+    }
+}
