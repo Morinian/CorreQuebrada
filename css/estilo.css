@@ -11,6 +11,8 @@
 body{
     background-color: #FFF2F2;
     font-family: 'Happy Monkey', cursive;
+
+    overflow-x: hidden;
 }
 
 /* Tabela de Redes*/
@@ -271,7 +273,7 @@ header.scrolled{
     outline: 10px #b05851  dashed;
 
     margin-top: 100px;
-    margin-bottom: 20px;
+    
 
     display: flex;
     align-items: center;
@@ -310,6 +312,323 @@ header.scrolled{
     margin-top: 20px;
     font-size: 24px;
 }
+
+.card{
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 460px;
+    width: 296px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+.swiper{
+    width: 950px;
+}
+section{
+    position: relative;
+    width: 450px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+}
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+    box-shadow: 0px -1px 4px 2px rgba(0, 0, 0, 0.25);
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.box1{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg, #f3a60f 14.23%,
+    rgba(255, 25, 25, 0) 139.97%);
+}
+.box2{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg, #00c2ff 14.23%,
+    rgba(255, 25, 25, 0) 139.97%);
+}
+.box3{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg, #f30fdd 14.23%,
+    rgba(255, 25, 25, 0) 139.97%);
+}
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i{
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover{
+    opacity: 1;
+}
+.card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+.name-profession .profession{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.card .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: orange;
+}
+section .card .about{
+    display: flex;
+    text-align: center;
+    color: #444;
+    margin-top: 45px;
+    margin-bottom: 5px; 
+}
+.card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.card .b1 button{
+    background: #f3a323;
+}
+.card .b2 button{
+    background: #14bff2;
+}
+.card .b3 button{
+    background: #f337e2;
+}
+.card .button button{
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card .button button:hover{
+    opacity: 0.8;
+}
+.swiper-pagination{
+    position: absolute;
+    top: 510px;
+}
+.swiper-pagination-bullet{
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+    background: #e634d7;
+}
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: #e634d7;
+    transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: #e634d7;
+}
+/*Trabalhos*/
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 50px;
+    height: 700px;
+
+    padding: 50px;
+    
+ }
+   
+ #item-0 {
+ 
+    background-image: url(../img/trabalhos/conjunto3.jpg); 
+    background-size: cover;
+
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;  
+
+    padding-bottom: 60px;
+ }
+ #item-0 a{
+    background-color: #b05751be;
+    color: #fff;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ #item-0 a:hover{
+    background-color: #6d0000;
+ }
+ #item-1 {
+ 
+    background-image: url(../img/trabalhos/conjunto1.jpg); 
+    background-size: cover;
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;  
+
+    padding-bottom: 60px;
+ }
+ #item-1 a{
+    background-color: #b05751be;
+    color: #fff;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ #item-1 a:hover{
+    background-color: #6d0000;
+
+ }
+ #item-2 {
+ 
+    background-image: url(../img/trabalhos/conjunto2.jpg); 
+    background-size: cover;
+    
+    grid-row-start: 3;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 3;
+    
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;  
+
+    padding-bottom: 60px;
+ }
+ #item-2 a{
+    background-color: #b05751be;
+    color: #fff;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 20px;
+
+    text-decoration: none;
+ }
+ #item-2 a:hover{
+    background-color: #6d0000;
+ }
+ #item-3 {
+    background-image: url(../img/trabalhos/conjunto4.jpg); 
+    background-size: cover;
+
+    grid-row-start: 3;
+    grid-column-start: 3;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;  
+
+    padding-bottom: 60px;
+ }
+ #item-3 a{
+    background-color: #b05751be;
+    color: #fff;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 20px;
+
+    text-decoration: none;
+ }
+ #item-3 a:hover{
+    background-color: #6d0000;
+ }
+.trabalhos{
+    height: auto;
+   
+}
+
+
+/*Toalhas*/
+.toalhas{
+    width: 100%;
+    height: 500px;
+
+    background-image: url(../img/fundoQ.jpg);
+    background-size: cover;
+    background-position: center;
+}
 /*FOOOTER*/
 footer{
     width: 100%;
@@ -319,6 +638,8 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+
+    margin-top: 100px;
 
 }
 #dirfooter{
@@ -381,6 +702,58 @@ footer{
     }
 }
 @media screen and (max-width: 768px) {
+/*GRID*/
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 50px;
+    height: 1500px;
+    
+ }
+   
+ #item-0 {
+ 
+    background-color: #99655F; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 4;
+    
+ }
+ #item-1 {
+ 
+    background-color: #DA557C; 
+    grid-row-start: 3;
+    grid-column-start: 1;
+ 
+    grid-row-end: 5;
+    grid-column-end: 4;
+    
+ }
+ #item-2 {
+ 
+    background-color: #659CBD; 
+    grid-row-start: 7;
+    grid-column-start: 1;
+ 
+    grid-row-end: 9;
+    grid-column-end: 4;
+    
+ }
+ #item-3 {
+ 
+    background-color: #567B79; 
+    grid-row-start: 5;
+    grid-column-start: 1;
+ 
+    grid-row-end: 7;
+    grid-column-end: 4;
+    
+ }
 
 /*MENU*/
 .item .content{
@@ -523,3 +896,261 @@ footer{
         font-size: 25px;
     }
 }
+
+.flex-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    overflow: hidden;
+    
+  }
+  @media screen and (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  .flex-title {
+    color: #f1f1f1;
+    position: relative;
+    font-size: 6vw;
+    margin: auto;
+    text-align: center;
+    transform: rotate(90deg);
+    top: 15%;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-title {
+      transform: rotate(0deg) !important;
+    }
+  }
+  
+  .flex-about {
+    opacity: 0;
+    color: #f1f1f1;
+    position: relative;
+    width: 70%;
+    font-size: 2vw;
+    padding: 5%;
+    top: 20%;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin: auto;
+    text-align: left;
+    transform: rotate(0deg);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-about {
+      padding: 0%;
+      border: 0px solid #f1f1f1;
+    }
+  }
+  
+  .flex-slide {
+    -webkit-flex: 1;
+    /* Safari 6.1+ */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  @media screen and (max-width: 768px) {
+    .flex-slide {
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-slide p {
+      font-size: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .flex-slide ul li {
+      font-size: 2em;
+    }
+  }
+  
+  .flex-slide:hover {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+  }
+  
+  .home {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/trabalhos/conjunto3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  @media screen and (min-width: 768px) {
+    .home {
+      animation: aboutFlexSlide 3s 1;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes aboutFlexSlide {
+    0% {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+    50% {
+      -webkit-flex-grow: 3;
+      flex-grow: 3;
+    }
+    100% {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .flex-title-home {
+      transform: rotate(90deg);
+      top: 15%;
+      animation: aboutFlexSlide 3s 1;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes homeFlextitle {
+    0% {
+      transform: rotate(90deg);
+      top: 15%;
+    }
+    50% {
+      transform: rotate(0deg);
+      top: 15%;
+    }
+    100% {
+      transform: rotate(90deg);
+      top: 15%;
+    }
+  }
+  .flex-about-home {
+    opacity: 0;
+  }
+  @media screen and (min-width: 768px) {
+    .flex-about-home {
+      animation: aboutFlexSlide 3s 1;
+      animation-delay: 0s;
+    }
+  }
+  
+  @keyframes flexAboutHome {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/trabalhos/conjunto2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .contact-form {
+    width: 100%;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  textarea {
+    width: 100%;
+  }
+  
+  .contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/trabalhos/conjunto2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  
+  .work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/trabalhos/conjunto1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .cube1, .cube2 {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+  }
+  
+  .cube2 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  @-webkit-keyframes sk-cubemove {
+    25% {
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  @keyframes sk-cubemove {
+    25% {
+      transform: translateX(42px) rotate(-90deg) scale(0.5);
+      -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+    }
+    50% {
+      transform: translateX(42px) translateY(42px) rotate(-179deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+    }
+    50.1% {
+      transform: translateX(42px) translateY(42px) rotate(-180deg);
+      -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+    }
+    75% {
+      transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+      -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    }
+    100% {
+      transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+    }
+  }
